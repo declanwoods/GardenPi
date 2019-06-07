@@ -1,9 +1,9 @@
-### GardenPi
+# GardenPi
 
 New and improved environment for the existing GardenPi project
 
 ## Planning
-# Technologies
+### Technologies
 
 **Frontend:**
 - Flutter 
