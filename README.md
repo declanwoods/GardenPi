@@ -13,12 +13,11 @@ New and improved environment for the existing GardenPi project
 - GraphQL
 - MQTT
 
-**Backend:**uhugh
+**Backend:**
 - Node.js for API later
 - Will run on main rack server
 - Display nodes will run *some* kind of embedded system, i.e. ESP32, RaspPi
 - Golang for worker that runs jobs from RMQ/MQTT
-
 
 ## Progress
 | Status | Description |
