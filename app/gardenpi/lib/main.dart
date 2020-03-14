@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'pages/settings.dart';
 import 'package:dio/dio.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(GardenPiApp());
+}
 
-class MyApp extends StatelessWidget {
+class GardenPiApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -54,7 +56,7 @@ class _MainPageState extends State<MainPage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline,
             ),
             RaisedButton(
               child: Text("test"),
