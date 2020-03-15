@@ -8,7 +8,8 @@
     "docker-build": "docker build -t gpi-api .",
     "docker-tag": "docker tag gpi-api:latest registry.declan.sh/gpi-api:$(git rev-parse HEAD)",
     "docker-push": "docker push registry.declan.sh/gpi-api:$(git rev-parse HEAD)",
-    "docker-all": "yarn docker-build && yarn docker-tag && yarn docker-push"
+    "docker-all": "yarn docker-build && yarn docker-tag && yarn docker-push",
+    "deploy": "helm upgrade --install --namespace gpi gardenpi-api ../helm/gpi-api -f ../helm/gpi-api/values.yaml"
   },
   "author": "",
   "license": "ISC",

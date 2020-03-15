@@ -20,6 +20,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  jiffy: ^3.0.1
+  intl: ^0.16.0
   cupertino_icons: ^0.1.3
   dio: 3.0.9
 

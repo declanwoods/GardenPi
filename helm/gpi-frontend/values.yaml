@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: stable
+  repository: registry.declan.sh/gpi-frontend
+  tag: fc2f37f757ebbf519b8d05e9ff3bc2cb726d637a
   pullPolicy: IfNotPresent
 
 nameOverride: ""
