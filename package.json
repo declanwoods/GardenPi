@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "install-mosquitto": "helm install halkeye/mosquitto --name gardenpi-mosquitto --version 0.1.0 -f ./helm/gpi-mosquitto/mosquitto.values.yaml",
+        "install-nodered": "helm install --name gardenpi-nodered stable/node-red -f ./helm/gpi-nodered/nodered.values.yaml"
+    }
+}

@@ -35,24 +35,34 @@ class _ScreensaverPageState extends State<ScreensaverPage> {
 
         return Scaffold(
             backgroundColor: Colors.black,
-            body: Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height,
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                        Container(
-                            padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
-                            child: Text(
-                                time,
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 72
-                                ),
+            body: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pushNamed("/home");
+                },
+                child: Container(
+                    width: double.infinity,
+                    child: SafeArea(
+                        child: Container(
+                            width: MediaQuery.of(context).size.width,
+                            height: MediaQuery.of(context).size.height,
+                            child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                    Container(
+                                        padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
+                                        child: Text(
+                                            time,
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 72
+                                            ),
+                                        ),
+                                    ),
+                                ],
                             ),
                         ),
-                    ],
+                    ),
                 ),
             ),
         );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'pages/home.dart';
 import 'pages/settings.dart';
 import 'pages/screensaver.dart';
@@ -13,8 +14,9 @@ class GardenPiApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'GardenPi',
-      home: ScreensaverPage(),
+      initialRoute: "/",
       routes: {
+        "/": (context) => ScreensaverPage(),
         "/home": (context) => HomePage(title: 'Home'),
         "/settings": (context) => SettingsPage(title: 'Settings'),
       },

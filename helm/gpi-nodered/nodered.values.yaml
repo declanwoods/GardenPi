@@ -1,0 +1,10 @@
+nameOverride: ""
+fullnameOverride: ""
+
+timezone: "Australia/Perth"
+
+persistence:
+  enabled: true
+  size: 5Gi
+  storageClass: "managed-nfs-storage"
+  accessModes: ReadWriteOnce
